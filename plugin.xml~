@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
-        id="io.github.itsmealves.cordova-plugin-websocketserver"
+        id="io.github.itsmealves.cordova-plugin-wsserver"
         version="0.7.0">
 
   <name>Hello</name>
@@ -9,10 +9,10 @@
     <engine name="cordova" version=">=3.4.0"/>
   </engines>
 
-  <asset src="www/websocketServer.js" target="js/websocketServer.js"/>
+  <asset src="www/wsserver.js" target="js/wsserver.js"/>
 
-  <js-module src="www/websocketServer.js" name="websocketServer">
-    <clobbers target="websocketServer" />
+  <js-module src="www/wsserver.js" name="wsserver">
+    <clobbers target="wsserver" />
   </js-module>
 
   <platform name="android">

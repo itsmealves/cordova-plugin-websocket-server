@@ -1,5 +1,5 @@
 {
-  "name": "cordova-plugin-wsserver",
+  "name": "cordova-plugin-websocketserver",
   "version": "1.0.0",
   "description": "Cordova plugin to enable an android device act as a websocket server",
   "main": "index.js",
