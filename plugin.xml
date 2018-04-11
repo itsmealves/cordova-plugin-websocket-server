@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
-        id="com.example.hello"
+        id="io.github.itsmealves.cordova-plugin-websocketserver"
         version="0.7.0">
 
   <name>Hello</name>
@@ -9,37 +9,21 @@
     <engine name="cordova" version=">=3.4.0"/>
   </engines>
 
-  <asset src="www/hello.js" target="js/hello.js"/>
+  <asset src="www/websocketServer.js" target="js/websocketServer.js"/>
 
-  <js-module src="www/hello.js" name="hello">
-    <clobbers target="hello" />
+  <js-module src="www/websocketServer.js" name="websocketServer">
+    <clobbers target="websocketServer" />
   </js-module>
 
   <platform name="android">
 
     <config-file target="res/xml/config.xml" parent="/*">
-      <feature name="Hello">
-        <param name="android-package" value="com.example.plugin.Hello"/>
+      <feature name="Server">
+        <param name="android-package" value="com.example.plugin.Server"/>
       </feature>
     </config-file>
 
-    <source-file src="src/android/Hello.java" target-dir="src/com/example/plugin/"/>
+    <framework src="org.java-websocket:Java-WebSocket:1.3.8" />
+    <source-file src="src/android/Server.java" target-dir="src/com/example/plugin/"/>
   </platform>
-
-  <platform name="ios">
-    
-    <config-file target="config.xml" parent="/widget">
-      <feature name="Hello">
-        <param name="ios-package" value="HWPHello" />
-      </feature>
-    </config-file>
-
-    <header-file src="src/ios/HWPHello.h" target-dir="HelloPlugin"/>
-    <source-file src="src/ios/HWPHello.m" target-dir="HelloPlugin"/>
-  </platform>
-
-  <platform name="wp7">
-    <source-file src="src/wp7/Hello.cs"/>
-  </platform>
-
 </plugin>
