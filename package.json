@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/itsmealves/cordova-plugin-websocketserver.git"
+    "url": "git+https://github.com/itsmealves/cordova-plugin-wsserver.git"
   },
   "author": "Gabriel Alves <itsmealves@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/itsmealves/cordova-plugin-websocketserver/issues"
+    "url": "https://github.com/itsmealves/cordova-plugin-wsserver/issues"
   },
-  "homepage": "https://github.com/itsmealves/cordova-plugin-websocketserver#readme"
+  "homepage": "https://github.com/itsmealves/cordova-plugin-wsserver#readme"
 }
